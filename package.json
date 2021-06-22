@@ -1,0 +1,33 @@
+{
+  "name": "browser-spreadsheet-parser",
+  "version": "0.0.1",
+  "description": "Parse spreadsheet files for the browser.",
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moontography/browser-spreadsheet-parser"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --exit -r ts-node/register --recursive './src/**/*.spec.ts'"
+  },
+  "author": "Lance Whatley",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.8",
+    "@types/papaparse": "^5.2.5",
+    "mocha": "^9.0.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.0.5"
+  },
+  "keywords": [
+    "browser",
+    "parser",
+    "spreadsheet"
+  ],
+  "dependencies": {
+    "papaparse": "^5.3.1",
+    "xlsx": "^0.17.0"
+  }
+}
